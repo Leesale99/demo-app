@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+
+    "globals": {
+        "React": true
+    },
+
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    parser: "babel-eslint",
+
+    "plugins": [
+        "react"
+    ],
+
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+
+  "rules": {
+    "react/jsx-no-bind": [1, {
+      "ignoreRefs": false,
+      "allowArrowFunctions": false,
+      "allowBind":  false
+    }]
+  }
+}
