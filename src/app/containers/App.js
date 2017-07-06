@@ -20,6 +20,7 @@ class App extends React.Component {
       <div className="container">
         <Main changeUsername={this.props.setName} />
         <User username={this.props.user.name} />
+        <h1>Hello</h1>
       </div>
     );
   }
