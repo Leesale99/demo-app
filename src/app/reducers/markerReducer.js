@@ -1,18 +1,15 @@
 
 
-const mathReducer = (state = {
-  result: 1,
-  lastValues: []
-}, action) => {
+const markerReducer = (state = [], action) => {
   switch (action.type) {
-    case 'ADD':
+    case 'ADD_MARKER':
       state = {
         ...state,
         result: state.result + action.payload,
         lastValues: [...state.lastValues, action.payload]
       };
       break;
-    case 'SUBSTRACT':
+    case 'REMOVE_MARKER':
       state = {
         ...state,
         result: state.result - action.payload,
@@ -20,7 +17,9 @@ const mathReducer = (state = {
       };
       break;
   }
-  return state;
+
+   return state;
+
 };
 
-export default mathReducer;
+export default markerReducer;

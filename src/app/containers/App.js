@@ -1,55 +1,41 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+// import PropTypes from 'prop-types';
+// import { bindActionCreators } from 'redux';
+// import { connect } from 'react-redux';
+// import * as markerActions from '../actions/markerActions';
 
 import Main from '../components/Main';
-import User from '../components/User';
-import * as userActions from '../actions/userActions';
+import MapContainer from './MapContainer';
 
 
-class App extends React.Component {
+export default class App extends React.Component {
 
-  onDeleteClick = () => {
-
-  }
 
   render() {
 
+
     return (
-      <div className="container">
-        <Main changeUsername={this.props.setName} />
-        <User username={this.props.user.name} />
-        <h1>Hello</h1>
+      <div className="wrapper">
+        <Main />
+        <MapContainer />
       </div>
-    );
+    )
+
   }
 }
 
-App.propTypes = {
-  setName: PropTypes.func.isRequired,
-  user: PropTypes.string.isRequired
-}
-
-
-const mapStateToProps = (state) => {
-  return {
-    user: state.user,
-    math: state.math,
-  };
-};
-
-// const mapDispatchToProps = (dispatch) => {
+// App.propTypes = {
+//   markers: PropTypes.array.isRequired
+// }
+//
+// const mapStateToProps = (state) => {
 //   return {
-//     setName: (name) => {
-//       dispatch(setName(name))
-//     }
+//     markers: state.markers
 //   }
 // }
-
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators(userActions, dispatch);
-};
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+//
+// const mapDispatchToProps = (dispatch) => {
+//   return bindActionCreators(markerActions, dispatch)
+// }
+//
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
