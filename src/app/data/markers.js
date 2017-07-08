@@ -6,6 +6,7 @@ const  markers =  [
     },
     key: '1',
     defaultAnimation: 2,
+    title: 'Hello World!'
   },
   {
     position: {

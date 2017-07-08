@@ -37,6 +37,24 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader'
+          },
+          {
+            loader: 'svgo-loader',
+            options: {
+              plugins: [
+                { removeTitle: true },
+                { convertPathData: false },
+                { removeUselessStrokeAndFill: true }
+              ]
+            }
+          }
+        ]
       }
     ]
   },
@@ -45,6 +63,7 @@ module.exports = {
     compress: true,
     stats: 'errors-only'
   },
+  devtool: 'source-map',
   plugins: [
     extractSass,
     new HtmlWebpackPlugin({title: 'Demo App', template: 'src/index.html'}),

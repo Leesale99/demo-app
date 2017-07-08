@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import markers from './markerReducer';
-// import user from './userReducer';
+import properties from './propertyReducer';
 
 const rootReducer = combineReducers({
     markers,
-    // user
+    properties
   });
 
 export default rootReducer;

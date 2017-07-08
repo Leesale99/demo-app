@@ -1,41 +1,22 @@
-import React from 'react';
+// import React from 'react';
 // import PropTypes from 'prop-types';
-// import { bindActionCreators } from 'redux';
-// import { connect } from 'react-redux';
-// import * as markerActions from '../actions/markerActions';
-
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as markerActions from '../actions/markerActions';
 import Main from '../components/Main';
-import MapContainer from './MapContainer';
 
 
-export default class App extends React.Component {
-
-
-  render() {
-
-
-    return (
-      <div className="wrapper">
-        <Main />
-        <MapContainer />
-      </div>
-    )
-
+const mapStateToProps = (state) => {
+  return {
+    markers: state.markers,
+    properties: state.properties
   }
 }
 
-// App.propTypes = {
-//   markers: PropTypes.array.isRequired
-// }
-//
-// const mapStateToProps = (state) => {
-//   return {
-//     markers: state.markers
-//   }
-// }
-//
-// const mapDispatchToProps = (dispatch) => {
-//   return bindActionCreators(markerActions, dispatch)
-// }
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(App);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(markerActions, dispatch)
+}
+
+const App = connect(mapStateToProps, mapDispatchToProps)(Main);
+
+export default App;

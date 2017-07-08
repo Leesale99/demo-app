@@ -1,0 +1,71 @@
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  border: 3px solid $color-bg-light;
+  padding: 10px;
+  transition: all .3s linear;
+
+  &:hover {
+    background: darken($color-bg-light, 10%);
+      border-color: darken($color-bg-light, 10%);
+      cursor: pointer;
+
+      .index {
+        background: $color-primary;
+      }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  .index {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 2px 5px;
+    background: #bebebe;
+    border-radius: 5px;
+    min-width: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    transition: background .3s linear;
+  }
+
+  .price {
+    padding: 10px 0;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__feature {
+    display: inline-block;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .icon {
+      height: 18px;
+      width: 18px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+}
