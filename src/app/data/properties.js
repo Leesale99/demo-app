@@ -9,7 +9,7 @@ const properties = [
     car_spaces: 0,
     latitude: 19.3440719,
     longitude: -81.3755458,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-1.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-1.jpg',
     code: 1,
   },
   {
@@ -22,7 +22,7 @@ const properties = [
     car_spaces: 1,
     latitude: 19.345523,
     longitude: -81.3734077,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-2.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-2.jpg',
     code: 2,
   },
   {
@@ -35,7 +35,7 @@ const properties = [
     car_spaces: 1,
     latitude: 19.3464537,
     longitude: -81.3757002,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-3.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-3.jpg',
     code: 3,
   },
   {
@@ -48,7 +48,7 @@ const properties = [
     car_spaces: 2,
     latitude: 19.346688,
     longitude: -81.3738077,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-4.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-4.jpg',
     code: 4,
   },
   {
@@ -61,7 +61,7 @@ const properties = [
     car_spaces: 1,
     latitude: 19.348065,
     longitude: -81.371533,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-5.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-5.jpg',
     code: 5,
   },
   {
@@ -74,7 +74,7 @@ const properties = [
     car_spaces: 0,
     latitude: 19.350155,
     longitude: -81.369613,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-6.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-6.jpg',
     code: 6,
   },
   {
@@ -87,7 +87,7 @@ const properties = [
     car_spaces: 1,
     latitude: 19.347222,
     longitude: -81.367869,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-7.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-7.jpg',
     code: 7,
   },
   {
@@ -100,7 +100,7 @@ const properties = [
     car_spaces: 2,
     latitude: 19.347222,
     longitude: -81.367869,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-8.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-8.jpg',
     code: 8,
   },
   {
@@ -113,7 +113,7 @@ const properties = [
     car_spaces: 2,
     latitude: 19.345015,
     longitude:  -81.369983,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-9.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-9.jpg',
     code: 9,
   },
   {
@@ -126,7 +126,7 @@ const properties = [
     car_spaces: 2,
     latitude: 19.345268,
     longitude: -81.365970,
-    picture: 'http://master-at-work.com/demo-app/images/properties/property-10.jpg',
+    picture: 'http://master-at-work.com/demo-app/img/properties/property-10.jpg',
     code: 10,
   }
 ]
