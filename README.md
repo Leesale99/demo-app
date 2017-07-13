@@ -17,7 +17,7 @@ Configuration of building process is made from scratch, without using pre-made b
 
 ## Preview
 
-Install: 
+Install:
 
 ```bash
 $ git clone https://github.com/Leesale99/demo-app.git
@@ -30,3 +30,8 @@ npm start
 or
 
 #### [Live Preview](http://master-at-work.com/demo-app)
+
+## Contact Me
+
+- [Upwork profile](https://www.upwork.com/o/profiles/users/_~0140c7e28ea94b0ee4),
+- [LinkedIn profile](https://www.linkedin.com/in/aleksandar-radovanovic-211103109/)
