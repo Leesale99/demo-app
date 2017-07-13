@@ -5,7 +5,6 @@ import Icon from './Icon';
 import bath from '../../img/icons/bath.svg';
 import bed from '../../img/icons/left-bed.svg';
 import car from '../../img/icons/car.svg';
-// import envelope from '../../img/icons/envelope.svg';
 
 
 const Card = (props) => {
