@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-import markers from './markerReducer';
 import properties from './propertyReducer';
+import activeFilters from './filterReducer';
 
 const rootReducer = combineReducers({
-    markers,
-    properties
-  });
+  properties,
+  activeFilters
+});
 
 export default rootReducer;

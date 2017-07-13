@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const extractSass = new ExtractTextPlugin({filename: "css/main.css"});
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: './src/app/index.js',
@@ -19,7 +19,7 @@ module.exports = {
         loaders: ['babel-loader', 'eslint-loader']
       }, {
         test: /\.scss$/,
-        use: extractSass.extract({
+        use: ExtractTextPlugin.extract({
           use: [
             'css-loader', 'postcss-loader', 'sass-loader'
           ],
@@ -61,12 +61,14 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    stats: 'errors-only'
+    stats: 'errors-only',
+    open: true,
+    openPage: ''
   },
   devtool: 'source-map',
   plugins: [
-    extractSass,
     new HtmlWebpackPlugin({title: 'Demo App', template: 'src/index.html'}),
-    new CleanWebpackPlugin(['dist/*'], {verbose: false})
+    new ExtractTextPlugin({filename: "css/main.css"}),
+    new CleanWebpackPlugin(['dist/*'], {verbose: false, dry: !isProd})
   ]
 };

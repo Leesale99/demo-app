@@ -3,6 +3,7 @@
  * =============================================================================
  */
 
+// Layout
 .listings {
   background: $color-bg-light;
   right: 0;
@@ -13,6 +14,10 @@
   overflow-x: hidden;
   overflow-y: scroll;
 
+  header {
+    padding: 20px;
+  }
+
   .card {
 
     &-container {
@@ -21,10 +26,13 @@
   }
 }
 
-.icon {
+// Filter
+header {
+  .form-group {
+    margin: 10px 20px 10px 0;
 
- svg {
-   width: 100%;
-   height: 100%;
- }
+    label {
+      margin-right: 5px;
+    }
+  }
 }
